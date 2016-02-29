@@ -1,0 +1,9 @@
+{
+  "handlers": {
+    "mailer": {
+      "type": "pipe",
+      "command": "/opt/sensu/embedded/bin/ruby /etc/sensu/handlers/mailer.rb",
+      "severities": ["critical", "unknown"]
+    }
+  }
+}

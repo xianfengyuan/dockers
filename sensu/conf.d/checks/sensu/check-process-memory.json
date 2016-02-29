@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "check-process-memory": {
+      "type": "metric",
+      "handlers": ["graphite"],
+      "check_description": "Script to check process rss memory usage and send to graphite",
+      "command": "sh /etc/sensu/plugins/system/metrics-process-memory.sh -s system.process -p rabbitmq_server",
+      "interval": 30,
+      "subscribers": [ "sensu" ]
+    }
+  }
+}

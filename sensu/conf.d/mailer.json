@@ -1,0 +1,12 @@
+{
+  "mailer": {
+    "admin_gui": "http://192.168.99.100:3009/",
+    "mail_from": "youremail@yahoo.com",
+    "mail_to": "youremail@yahoo.com",
+    "smtp_address": "smtp.mail.yahoo.com",
+    "smtp_port": "587",
+    "smtp_username": "username",
+    "smtp_password": "password",    
+    "smtp_domain": "yahoo.com"
+  }
+}

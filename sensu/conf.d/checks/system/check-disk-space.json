@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "check-disk-space": {
+      "handlers": ["default"],
+      "command": "/opt/sensu/embedded/bin/ruby /etc/sensu/plugins/system/check-disk/check-disk.rb -w 85 -c 90",
+      "interval": 60,
+      "occurrences": 2,
+      "subscribers": [ "all" ]
+    }
+  }
+}

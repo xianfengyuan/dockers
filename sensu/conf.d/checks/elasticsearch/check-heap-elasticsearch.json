@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "check-heap-elasticsearch": {
+      "handlers": ["default"],
+      "check_description" : "Check Heap Size Usage in %. If its above 85, it means that the GC is not releasing enought memory which is normally meaning that we are running out of memory",
+      "command": "/opt/sensu/embedded/bin/ruby /etc/sensu/plugins/elasticsearch/check-es-heap.rb -s elk -c 85 -w 85",
+      "interval": 60,
+      "occurrences": 3,
+      "subscribers": [ "sensu" ]
+    }
+  }
+}

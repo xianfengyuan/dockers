@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "sensu-server-memory": {
+      "type": "metric",
+      "handlers": ["graphite"],
+      "check_description": "Script to check process rss memory usage and send to graphite",
+      "command": "sh /etc/sensu/plugins/system/metrics-process-memory.sh -s system.process -p sensu-server",
+      "interval": 30,
+      "subscribers": [ "sensu" ]
+    }
+  }
+}
